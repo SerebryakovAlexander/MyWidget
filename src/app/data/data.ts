@@ -6,7 +6,7 @@ const the_hotels: IHotel[] = [
   {
     img1:           'assets/images/res.jpg',
     img2:           'assets/images/r1.jpg',
-    address:        'Resort Address 1',
+    address:        'Египет',
     phone:          1285968685,               // дополнительно задание pipe для форматирования
     weather: {
       title:        'Et harum quidem',
@@ -25,7 +25,7 @@ const the_hotels: IHotel[] = [
   {
     img1:           'assets/images/res.jpg',
     img2:           'assets/images/r1.jpg',
-    address:        'Resort Address 2',
+    address:        'Испания',
     phone:          1285968686,               // дополнительно задание pipe для форматирования
     weather: {
       title:        'Et harum quidem',
@@ -44,7 +44,7 @@ const the_hotels: IHotel[] = [
   {
     img1:           'assets/images/res.jpg',
     img2:           'assets/images/r1.jpg',
-    address:        'Resort Address 3',
+    address:        'Мальдивы',
     phone:          1285968687,               // дополнительно задание pipe для форматирования
     weather: {
       title:        'Et harum quidem',

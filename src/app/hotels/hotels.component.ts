@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {hotels$} from '../data/data';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-hotels',
@@ -11,5 +13,7 @@ export class HotelsComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  public hotels$: Observable<IHotel[]> = hotels$;
 
 }
