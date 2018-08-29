@@ -19,9 +19,11 @@
             <!--<div *ngFor="let key of products[0] | keyvalue ">-->
             <!--<div>{{key | json}}</div>-->
             <!--</div>-->
-            <app-hotel *ngFor="let hotel of hotels | hotelFilter:searchCriteria;"
-                       [resortAddress]="hotel.address" [hotelPhone]="hotel.phone | phoneFormat" [img1Src]="hotel.img1" [img2Src]="hotel.img2"
-            ></app-hotel>
+            <div class = "list-group">
+              <app-hotel *ngFor="let hotel of hotels | hotelFilter:searchCriteria;"
+                         [resortAddress]="hotel.address" [hotelPhone]="hotel.phone | phoneFormat" [img1Src]="hotel.img1" [img2Src]="hotel.img2"
+              ></app-hotel>
+            </div>
           </div>
           <ng-template #loadRef>
             <div>
