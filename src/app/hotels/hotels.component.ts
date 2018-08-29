@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {hotels$} from '../data/data';
 import {Observable} from 'rxjs';
+import {stringify} from 'querystring';
 
 @Component({
   selector: 'app-hotels',
@@ -8,6 +9,8 @@ import {Observable} from 'rxjs';
   styleUrls: ['./hotels.component.css']
 })
 export class HotelsComponent implements OnInit {
+  @Output()
+  public onHotelClick: EventEmitter<IHotel> = new EventEmitter<IHotel>();
 
   constructor() { }
 
@@ -19,7 +22,7 @@ export class HotelsComponent implements OnInit {
 
   public searchCriteria: string;
 
-  public onHotelClick(): void {
+  public onHotelLinkClick(): void {
     this.searchCriteria = 'hotel';
   }
 
@@ -33,5 +36,9 @@ export class HotelsComponent implements OnInit {
 
   public onAllClick(): void {
     this.searchCriteria = 'all';
+  }
+
+  public onItemClick(hotel: IHotel): void {
+    this.onHotelClick.emit(hotel);
   }
 }

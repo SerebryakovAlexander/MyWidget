@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-hotel',
@@ -6,22 +6,18 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./hotel.component.css']
 })
 export class HotelComponent implements OnInit {
-
   @Input()
-  public resortAddress: string;
+  public hotel: IHotel;
 
-  @Input()
-  public hotelPhone: string;
-
-  @Input()
-  public img1Src: string;
-
-  @Input()
-  public img2Src: string;
+  @Output()
+  public onHotelClick: EventEmitter<IHotel> = new EventEmitter<IHotel>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  public onClick(): void {
+    this.onHotelClick.emit(this.hotel);
+  }
 }

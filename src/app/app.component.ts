@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyWidget';
+
+  public onHotelClick(hotel: IHotel): void {
+    console.log(JSON.stringify(hotel));
+  }
 }
