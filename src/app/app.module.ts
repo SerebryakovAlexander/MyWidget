@@ -7,6 +7,7 @@ import { CopyRightComponent } from './copy-right/copy-right.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { WeatherComponent } from './weather/weather.component';
 import { TeddyBearComponent } from './teddy-bear/teddy-bear.component';
+import { HotelComponent } from './hotels/hotel/hotel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TeddyBearComponent } from './teddy-bear/teddy-bear.component';
     CopyRightComponent,
     HotelsComponent,
     WeatherComponent,
-    TeddyBearComponent
+    TeddyBearComponent,
+    HotelComponent
   ],
   imports: [
     BrowserModule
