@@ -8,6 +8,7 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { WeatherComponent } from './weather/weather.component';
 import { TeddyBearComponent } from './teddy-bear/teddy-bear.component';
 import { HotelComponent } from './hotels/hotel/hotel.component';
+import { HotelFilterPipe } from './pipes/hotel-filter-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HotelComponent } from './hotels/hotel/hotel.component';
     HotelsComponent,
     WeatherComponent,
     TeddyBearComponent,
-    HotelComponent
+    HotelComponent,
+    HotelFilterPipe
   ],
   imports: [
     BrowserModule

@@ -1,9 +1,10 @@
 <div class="element-left-bottom">
   <div class="ele-strip">
     <ul>
-      <li><a href="#">Отель</a></li>
-      <li><a href="#">Рыбалка</a></li>
-      <li><a href="#">Тур</a></li>
+      <li><a href="#" (click)="onAllClick()">Все</a></li>
+      <li><a href="#" (click)="onHotelClick()">Отель</a></li>
+      <li><a href="#" (click)="onFishingClick()">Рыбалка</a></li>
+      <li><a href="#" (click)="onTourClick()">Тур</a></li>
       <li class="anc-bor"><a href="#">Погода</a></li>
     </ul>
   </div>
@@ -18,7 +19,7 @@
             <!--<div *ngFor="let key of products[0] | keyvalue ">-->
             <!--<div>{{key | json}}</div>-->
             <!--</div>-->
-            <app-hotel *ngFor="let hotel of hotels;"
+            <app-hotel *ngFor="let hotel of hotels | hotelFilter:searchCriteria;"
                        [resortAddress]="hotel.address" [hotelPhone]="hotel.phone" [img1Src]="hotel.img1" [img2Src]="hotel.img2"
             ></app-hotel>
           </div>
