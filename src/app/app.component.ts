@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MyWidget';
+
+  public weatherTitle: string;
+  public waterDegree: number;
+  public airDegrre: number;
 
   public onHotelClick(hotel: IHotel): void {
-    console.log(JSON.stringify(hotel));
+    this.weatherTitle = hotel.weather.title;
+    this.airDegrre = hotel.weather.temperature;
+    this.waterDegree = hotel.weather.water;
   }
 }

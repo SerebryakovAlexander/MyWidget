@@ -9,10 +9,10 @@ const the_hotels: IHotel[] = [
     address:        'Египет',
     phone:          1285968685,               // дополнительно задание pipe для форматирования
     weather: {
-      title:        'Et harum quidem',
+      title:        'Погода в Египте',
       icon:         '',
-      water:        20,
-      temperature:  14,
+      water:        28,
+      temperature:  40,
     },
     social_info: {
       title:        'Nam libero voluptatem',
@@ -28,10 +28,10 @@ const the_hotels: IHotel[] = [
     address:        'Испания',
     phone:          1285968686,               // дополнительно задание pipe для форматирования
     weather: {
-      title:        'Et harum quidem',
+      title:        'Погода в Испании',
       icon:         '',
-      water:        20,
-      temperature:  14,
+      water:        23,
+      temperature:  28,
     },
     social_info: {
       title:        'Nam libero voluptatem',
@@ -47,10 +47,10 @@ const the_hotels: IHotel[] = [
     address:        'Мальдивы',
     phone:          1285968687,               // дополнительно задание pipe для форматирования
     weather: {
-      title:        'Et harum quidem',
+      title:        'Погода на Мальдивах',
       icon:         '',
-      water:        20,
-      temperature:  14,
+      water:        27,
+      temperature:  31,
     },
     social_info: {
       title:        'Nam libero voluptatem',
