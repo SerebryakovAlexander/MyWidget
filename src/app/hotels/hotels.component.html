@@ -20,7 +20,7 @@
             <!--<div>{{key | json}}</div>-->
             <!--</div>-->
             <app-hotel *ngFor="let hotel of hotels | hotelFilter:searchCriteria;"
-                       [resortAddress]="hotel.address" [hotelPhone]="hotel.phone" [img1Src]="hotel.img1" [img2Src]="hotel.img2"
+                       [resortAddress]="hotel.address" [hotelPhone]="hotel.phone | phoneFormat" [img1Src]="hotel.img1" [img2Src]="hotel.img2"
             ></app-hotel>
           </div>
           <ng-template #loadRef>

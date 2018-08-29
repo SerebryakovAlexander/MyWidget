@@ -1,8 +1,8 @@
-import { HotelFilterPipePipe } from './hotel-filter-pipe.pipe';
+import { HotelFilterPipe } from './hotel-filter-pipe.pipe';
 
-describe('HotelFilterPipePipe', () => {
+describe('HotelFilterPipe', () => {
   it('create an instance', () => {
-    const pipe = new HotelFilterPipePipe();
+    const pipe = new HotelFilterPipe();
     expect(pipe).toBeTruthy();
   });
 });
