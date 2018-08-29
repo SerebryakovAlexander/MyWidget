@@ -15,10 +15,10 @@ const the_hotels: IHotel[] = [
       temperature:  40,
     },
     social_info: {
-      title:        'Nam libero voluptatem',
+      title:        'С Вами едут в Египет',
       img:          'assets/images/b1.jpg',
-      followers:    2850,
-      following:    675,
+      followers:    5850,
+      following:    175,
     },
     type:           'hotel'
   },
@@ -34,10 +34,10 @@ const the_hotels: IHotel[] = [
       temperature:  28,
     },
     social_info: {
-      title:        'Nam libero voluptatem',
+      title:        'С Вами едут в Испанию',
       img:          'assets/images/b1.jpg',
-      followers:    2850,
-      following:    675,
+      followers:    3850,
+      following:    975,
     },
     type:           'fishing'
   },
@@ -53,8 +53,8 @@ const the_hotels: IHotel[] = [
       temperature:  31,
     },
     social_info: {
-      title:        'Nam libero voluptatem',
-      img:          'assets/images/b1.jpg',
+      title:        'С Вами едут на Мальдивы',
+      img:          'assets/images/r1.jpg',
       followers:    2850,
       following:    675,
     },
