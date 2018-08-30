@@ -7,21 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public weatherTitle: string;
-  public waterDegree: number;
-  public airDegrre: number;
-  public followers: number;
-  public following: number;
-  public socialImgSrc: string;
-  public socialTitle: string;
+  public selectedHotel: IHotel;
 
   public onHotelClick(hotel: IHotel): void {
-    this.weatherTitle = hotel.weather.title;
-    this.airDegrre = hotel.weather.temperature;
-    this.waterDegree = hotel.weather.water;
-    this.followers = hotel.social_info.followers;
-    this.following = hotel.social_info.following;
-    this.socialImgSrc = hotel.social_info.img;
-    this.socialTitle = hotel.social_info.title;
+    this.selectedHotel = hotel;
   }
 }

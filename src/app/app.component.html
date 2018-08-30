@@ -6,8 +6,8 @@
     <app-hotels (onHotelClick)="onHotelClick($event)"></app-hotels>
   </div>
   <div class="element-right">
-    <app-weather [title]="weatherTitle" [waterDegree]="waterDegree" [airDegree]="airDegrre"></app-weather>
-    <app-teddy-bear [followers]="followers" [following]="following" [imgSrc]="socialImgSrc" [socialTitle]="socialTitle"></app-teddy-bear>
+    <app-weather [title]="selectedHotel?.weather.title" [waterDegree]="selectedHotel?.weather.water" [airDegree]="selectedHotel?.weather.temperature"></app-weather>
+    <app-teddy-bear [followers]="selectedHotel?.social_info.followers" [following]="selectedHotel?.social_info.following" [imgSrc]="selectedHotel?.social_info.img" [socialTitle]="selectedHotel?.social_info.title"></app-teddy-bear>
   </div>
   <div class="clear"></div>
 </div>
