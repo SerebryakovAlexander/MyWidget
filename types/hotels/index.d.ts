@@ -3,6 +3,7 @@
 interface IHotel {
   img1:           string;
   img2:           string;
+  img3:           string;
   address:        string;
   phone:          number;   // дополнительно задание pipe для форматирования
   weather: {

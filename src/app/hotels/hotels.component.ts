@@ -11,6 +11,7 @@ import {stringify} from 'querystring';
 export class HotelsComponent implements OnInit {
   @Output()
   public onHotelClick: EventEmitter<IHotel> = new EventEmitter<IHotel>();
+  public curHotelImg = 'assets/images/1.jpg';
 
   constructor() { }
 
@@ -40,5 +41,6 @@ export class HotelsComponent implements OnInit {
 
   public onItemClick(hotel: IHotel): void {
     this.onHotelClick.emit(hotel);
+    this.curHotelImg = hotel.img3;
   }
 }
