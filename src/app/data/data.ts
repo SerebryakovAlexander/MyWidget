@@ -26,7 +26,7 @@ const the_hotels: IHotel[] = [
   {
     img1:           'assets/images/res.jpg',
     img2:           'assets/images/r1.jpg',
-    img3:           'assets/images/1.jpg',
+    img3:           'assets/images/2.jpg',
     address:        'Испания',
     phone:          1285968686,               // дополнительно задание pipe для форматирования
     weather: {
@@ -46,7 +46,7 @@ const the_hotels: IHotel[] = [
   {
     img1:           'assets/images/res.jpg',
     img2:           'assets/images/r1.jpg',
-    img3:           'assets/images/1.jpg',
+    img3:           'assets/images/3.jpg',
     address:        'Мальдивы',
     phone:          1285968687,               // дополнительно задание pipe для форматирования
     weather: {

@@ -1,22 +1,26 @@
 
 
+interface IWeather {
+  title:          string;
+  icon:           string;
+  water:          number;
+  temperature:    number;
+}
+
+interface ISocial {
+  title:          string;
+  img:            string;
+  followers:      number;
+  following:      number;
+}
+
 interface IHotel {
   img1:           string;
   img2:           string;
   img3:           string;
   address:        string;
   phone:          number;   // дополнительно задание pipe для форматирования
-  weather: {
-    title:        string;
-    icon:         string;
-    water:        number;
-    temperature:  number;
-  };
-  social_info: {
-    title:        string;
-    img:          string;
-    followers:    number;
-    following:    number;
-  };
+  weather:        IWeather;
+  social_info:    ISocial;
   type:           string;
 }
